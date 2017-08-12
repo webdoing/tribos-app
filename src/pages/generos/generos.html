@@ -1,0 +1,20 @@
+<ion-content class="bg-tribos" text-center>
+
+  <h3>Selecione seu(s) gênero(s) musical(ais) preferidos</h3>
+
+  <ion-scroll scrollY="true" padding-left padding-right>
+    <ion-grid>
+      <ion-row>
+        <ion-col class="coluna-genero" col-4 *ngFor="let genero of generos" [ngClass]="genero.selecionado?'selecionado':'nao-selecionado'"
+          (click)="genero.selecionado = !genero.selecionado">
+          <img [src]="genero.icone" class="icone">
+          <p>{{genero.nome}}</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-scroll>
+
+  <button ion-button medium margin-top color="amarelo_1" (click)="registrarGeneros()" class="continuar">Continuar</button>
+  <h3 class="slogan">Encontre sua Tribo!</h3>
+
+</ion-content>

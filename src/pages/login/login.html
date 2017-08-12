@@ -1,0 +1,33 @@
+<ion-content class="bg-tribos" text-center>
+  <ion-grid>
+
+    <ion-row>
+      <ion-col>
+        <img src="./assets/images/logo.png" alt="Tribos" class="logo">
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-item>
+        <ion-input text-center type="email" placeholder="Digite seu email"></ion-input>
+      </ion-item>
+    </ion-row>
+    <ion-row>
+      <ion-item>
+        <ion-input text-center type="password" placeholder="Digite sua senha"></ion-input>
+      </ion-item>
+    </ion-row>
+
+    <ion-row class="align-horizontal btn-login">
+      <button ion-button large color="amarelo_1">Login</button>
+      <button ion-button large color="amarelo_1" [navPush]="cadastrar">Cadastrar</button>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <h2 class="slogan">Encontre sua Tribo!</h2>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>

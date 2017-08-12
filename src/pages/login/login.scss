@@ -1,0 +1,25 @@
+page-login {
+    .btn-login{
+        margin-top: 50px
+    }
+    .logo{
+        margin-bottom: 10px;
+    }
+    .item-ios, .item-md{
+        border-radius: 2px;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .input-label {
+        color:#c0c0c0;
+        padding-left: .5em; 
+    }
+    .item {
+        color: #000;
+        margin-bottom: 5px;
+        padding-left: .25em;
+    }
+}

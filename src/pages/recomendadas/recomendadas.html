@@ -1,0 +1,9 @@
+<ion-content>
+  <ion-card *ngFor="let festa of festas">
+    <img [src]="festa.image" class="card-image"/>
+    <div class="card-pelicula">
+        <p>{{festa.data}}</p>
+        <p>{{festa.nome}}</p>
+    </div>
+  </ion-card>
+</ion-content>
